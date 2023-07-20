@@ -27,8 +27,8 @@ class Log extends AppModel{
 		// Use the REST API Client to make requests to the Twilio REST API
 		//use Twilio\Rest\Client;
 		// Your Account SID and Auth Token from twilio.com/console
-		$sid = 'ACb5829a39039cd39a0436d02559e20b92';
-		$token = '715fe7c400a7a6913d5d1a1765396dee';
+		$sid = '';
+		$token = '';
 		//$twilio = new Client($sid, $token);
 		$twilio = new Twilio\Rest\Client($sid, $token);
 

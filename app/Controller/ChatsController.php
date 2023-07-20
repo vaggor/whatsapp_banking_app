@@ -40,8 +40,10 @@ class ChatsController extends AppController {
 		//print_r($phone_no);exit;
 
 		$check_if_user_exist = $this->User->checkUserExist($phone_no);
+		//print_r($check_if_user_exist);exit;
 		if($check_if_user_exist == 1){
 			$session_status = $this->User->getSessionStatusByPhoneNo($phone_no);
+			//print_r($session_status);exit;
 			if($session_status == 0){
 				$this->enter_pin($To,$From);
 			}
